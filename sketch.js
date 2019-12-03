@@ -10,8 +10,8 @@ var maracasb;
 function setup() {
 createCanvas(windowWidth,windowHeight);
 monkey = loadImage("./assets/scimmia samba.png");
-caracasa = loadImage("./assets/maracas 1-min.png");
-caracasb = loadImage("./assets/maracas 2-min.png")
+maracasa = loadImage("./assets/maracas 1-min.png");
+maracasb = loadImage("./assets/maracas 2-min.png")
 music = loadSound("./assets/maracas.wav");
 
   setShakeThreshold(10);
