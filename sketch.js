@@ -4,9 +4,6 @@ var monkey;
 var maracasa ;
 var maracasb;
 
-
-
-
 function setup() {
 createCanvas(windowWidth,windowHeight);
 monkey = loadImage("./assets/scimmia samba.png");
@@ -14,19 +11,19 @@ maracasa = loadImage("./assets/maracas 1-min.png");
 maracasb = loadImage("./assets/maracas 2-min.png")
 music = loadSound("./assets/maracas.wav");
 
-  setShakeThreshold(10);
+angleMode(DEGREES);
+setShakeThreshold(30);
  frameRate(15);
 }
 
 function draw() {
-    background("yellow")
+    background("orange")
   if (value === 0) {
-
     imageMode(CENTER);
     image(maracasa, width/2, height/2, maracasa.width/2, maracasa.height/2);
     fill("white");
     textStyle(BOLD)
-    textSize(20)
+    textSize(100)
     text('Shake it to play',windowWidth/2,250);
     music.play();
     music.loop();
@@ -39,7 +36,7 @@ function draw() {
     textSize(20)
     text('keep playing',windowWidth/2,250);
   } else if (value === 2) {
-    background("red")
+    background("purple")
     imageMode(CENTER);
     image(monkey ,width/2, height/2, monkey.width/2, monkey.height/2);
     fill("white");
